@@ -179,6 +179,93 @@
     });
   }
 
+  // ---------- Leaflet Map Initialization ----------
+  function initMap() {
+    const mapEl = document.getElementById('map');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    // Pessac coordinates
+    const pessac = [44.8066, -0.6311];
+
+    const map = L.map('map', {
+      center: pessac,
+      zoom: 13,
+      scrollWheelZoom: false,
+      zoomControl: true,
+    });
+
+    // OpenStreetMap tiles with warm-toned attribution
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Custom marker icon matching brand colors
+    const aimIcon = L.divIcon({
+      className: 'aim-map-marker',
+      html: '<div class="aim-marker-pin"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>',
+      iconSize: [44, 44],
+      iconAnchor: [22, 44],
+      popupAnchor: [0, -40],
+    });
+
+    // Main marker on Pessac
+    L.marker(pessac, { icon: aimIcon })
+      .addTo(map)
+      .bindPopup('<strong>AIM Immobilier</strong>Pessac, France<br>Votre agence de proximite')
+      .openPopup();
+
+    // Notable nearby areas with subtle circle markers
+    const zones = [
+      { coords: [44.8378, -0.5792], name: 'Bordeaux Centre' },
+      { coords: [44.7906, -0.5957], name: 'Talence' },
+      { coords: [44.7726, -0.6141], name: 'Gradignan' },
+      { coords: [44.8297, -0.6834], name: 'Merignac' },
+      { coords: [44.7456, -0.5738], name: 'Villenave-d\'Ornon' },
+    ];
+
+    zones.forEach(function (zone) {
+      L.circleMarker(zone.coords, {
+        radius: 6,
+        fillColor: '#D4987E',
+        color: '#B8654A',
+        weight: 2,
+        opacity: 0.8,
+        fillOpacity: 0.5,
+      })
+        .addTo(map)
+        .bindPopup('<strong>' + zone.name + '</strong>Zone d\'intervention');
+    });
+
+    // Enable scroll zoom on click/focus
+    map.on('click', function () {
+      map.scrollWheelZoom.enable();
+    });
+
+    mapEl.addEventListener('mouseleave', function () {
+      map.scrollWheelZoom.disable();
+    });
+
+    // Invalidate size when map becomes visible (for reveal animations)
+    const mapObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          map.invalidateSize();
+          mapObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    mapObserver.observe(mapEl);
+  }
+
+  // Init map when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMap);
+  } else {
+    initMap();
+  }
+
   // ---------- Parallax-like subtle float for hero ----------
   let ticking = false;
   function handleHeroParallax() {
