@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIM Immobilier — Nous accompagnons vos projets de vie</title>
+  <meta name="description" content="AIM Immobilier, agence immobilière de proximité. Confiance, expertise locale et accompagnement humain pour tous vos projets immobiliers résidentiels.">
+  <meta name="theme-color" content="#B8654A">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo@2x.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AIM Immobilier — Nous accompagnons vos projets de vie">
+  <meta property="og:description" content="Agence immobilière de proximité. Confiance, expertise locale et accompagnement humain.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo@2x.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Navigation principale">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="AIM Immobilier - Accueil">
+        <img src="img/logo.png" alt="AIM Immobilier" width="100" height="40">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#philosophie" class="nav-link">Philosophie</a></li>
+          <li><a href="#valeurs" class="nav-link">Valeurs</a></li>
+          <li><a href="#approche" class="nav-link">Notre approche</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Nous contacter</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-logo reveal reveal--scale">
+        <img src="img/logo.png" alt="AIM Immobilier" width="320" height="180">
+      </div>
+      <div class="hero-divider reveal reveal--fade"></div>
+      <h1 class="hero-title reveal reveal--up" data-delay="200">
+        Nous accompagnons<br>vos <em>projets de vie</em>
+      </h1>
+      <p class="hero-subtitle reveal reveal--up" data-delay="400">
+        Agence immobilière de proximité, humaine et engagée.
+      </p>
+      <a href="#philosophie" class="hero-cta reveal reveal--up" data-delay="600">
+        Découvrir notre histoire
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== PHILOSOPHIE ========== -->
+  <section class="section section--cream" id="philosophie">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-label">Notre philosophie</span>
+        <h2 class="section-title">
+          Derrière chaque bien,<br>il y a un <em>projet de vie</em>
+        </h2>
+      </div>
+
+      <div class="philosophy-intro reveal reveal--up" data-delay="200">
+        <p class="text-large">
+          AIM Immobilier ne vend pas un bien. Nous accompagnons un projet de vie.
+          Chaque transaction immobilière porte en elle des rêves, des souvenirs,
+          et des aspirations que nous prenons le temps de comprendre.
+        </p>
+      </div>
+
+      <div class="meaning-grid">
+        <div class="meaning-card reveal reveal--up" data-delay="100">
+          <span class="meaning-number">01</span>
+          <h3 class="meaning-title">Une dimension humaine</h3>
+          <p class="meaning-text">
+            AIM porte les initiales de ses fondateurs — Anna Idoux, Anne et Alexis Massart.
+            La marque incarne l'engagement direct des associés dans chaque projet.
+          </p>
+        </div>
+        <div class="meaning-card reveal reveal--up" data-delay="250">
+          <span class="meaning-number">02</span>
+          <h3 class="meaning-title">Une direction, un objectif</h3>
+          <p class="meaning-text">
+            En anglais, <em>"aim"</em> signifie objectif et intention. Acheter, vendre,
+            investir, transmettre — chaque projet est un cap que nous vous aidons à atteindre.
+          </p>
+        </div>
+        <div class="meaning-card reveal reveal--up" data-delay="400">
+          <span class="meaning-number">03</span>
+          <h3 class="meaning-title">Une touche d'émotion</h3>
+          <p class="meaning-text">
+            Phonétiquement proche de <em>"aime"</em>, le nom évoque l'attachement
+            à un lieu, le choix d'un cadre de vie et la dimension affective de l'habitat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VALEURS ========== -->
+  <section class="section" id="valeurs">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-label">Nos valeurs</span>
+        <h2 class="section-title">
+          Ce qui nous anime<br><em>au quotidien</em>
+        </h2>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card reveal reveal--up" data-delay="100">
+          <div class="clay-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Confiance</h3>
+          <p class="value-text">
+            Transparence, qualité de l'information et honnêteté à chaque étape.
+            Nous sommes un partenaire, pas un intermédiaire.
+          </p>
+        </div>
+
+        <div class="value-card reveal reveal--up" data-delay="200">
+          <div class="clay-icon clay-icon--2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Proximité</h3>
+          <p class="value-text">
+            Nous connaissons chaque quartier, chaque rue, chaque tendance du marché local.
+            Cette expertise locale est notre plus grand atout.
+          </p>
+        </div>
+
+        <div class="value-card reveal reveal--up" data-delay="300">
+          <div class="clay-icon clay-icon--3">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Engagement</h3>
+          <p class="value-text">
+            Nous suivons chaque client jusqu'au bout avec une vraie implication.
+            Pas d'approche volumique, pas d'industrialisation.
+          </p>
+        </div>
+
+        <div class="value-card reveal reveal--up" data-delay="400">
+          <div class="clay-icon clay-icon--4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Humanité</h3>
+          <p class="value-text">
+            Une marque chaleureuse, accessible et sensible. Loin du ton froid
+            des réseaux immobiliers traditionnels.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPROCHE ========== -->
+  <section class="section section--cream" id="approche">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-label">Notre approche</span>
+        <h2 class="section-title">
+          L'agence du quartier,<br><em>nouvelle génération</em>
+        </h2>
+      </div>
+
+      <div class="approach-layout">
+        <div class="approach-image reveal reveal--up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Intérieur moderne et lumineux" loading="lazy">
+        </div>
+        <div class="approach-content">
+          <div class="approach-text reveal reveal--up" data-delay="200">
+            <p class="text-large">
+              AIM Immobilier se distingue volontairement des codes classiques
+              de l'immobilier. Moderne, minimaliste, humaine et experte — nous
+              créons un climat de confiance où chaque partie se sent comprise et sécurisée.
+            </p>
+          </div>
+
+          <div class="approach-grid">
+          <div class="approach-item reveal reveal--up" data-delay="100">
+            <div class="approach-item-marker"></div>
+            <div>
+              <h4 class="approach-item-title">Hyper-proximité locale</h4>
+              <p class="approach-item-text">Connaissance intime des biens, des quartiers et du marché local.</p>
+            </div>
+          </div>
+          <div class="approach-item reveal reveal--up" data-delay="200">
+            <div class="approach-item-marker"></div>
+            <div>
+              <h4 class="approach-item-title">Sélection exigeante</h4>
+              <p class="approach-item-text">Pas de portefeuille surchargé. Chaque bien bénéficie de toute notre attention.</p>
+            </div>
+          </div>
+          <div class="approach-item reveal reveal--up" data-delay="300">
+            <div class="approach-item-marker"></div>
+            <div>
+              <h4 class="approach-item-title">Relation humaine et durable</h4>
+              <p class="approach-item-text">Un accompagnement personnalisé, du premier contact jusqu'à la signature.</p>
+            </div>
+          </div>
+          <div class="approach-item reveal reveal--up" data-delay="400">
+            <div class="approach-item-marker"></div>
+            <div>
+              <h4 class="approach-item-title">Transparence totale</h4>
+              <p class="approach-item-text">Prix, visites, feedbacks — une communication honnête et complète.</p>
+            </div>
+          </div>
+          <div class="approach-item reveal reveal--up" data-delay="500">
+            <div class="approach-item-marker"></div>
+            <div>
+              <h4 class="approach-item-title">Mise en marché soignée</h4>
+              <p class="approach-item-text">Chaque bien est présenté avec soin pour refléter sa vraie valeur.</p>
+            </div>
+          </div>
+          <div class="approach-item reveal reveal--up" data-delay="600">
+            <div class="approach-item-marker"></div>
+            <div>
+              <h4 class="approach-item-title">Compréhension des motivations</h4>
+              <p class="approach-item-text">Nous prenons le temps de comprendre les enjeux de chaque vendeur et acheteur.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-label">Nos services</span>
+        <h2 class="section-title">
+          Un accompagnement<br><em>sur mesure</em>
+        </h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal reveal--up" data-delay="100">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Maison moderne à vendre" loading="lazy">
+          </div>
+          <div class="service-body">
+          <span class="service-number">01</span>
+          <h3 class="service-title">Vente</h3>
+          <p class="service-text">
+            Estimation précise, mise en valeur de votre bien, stratégie de
+            commercialisation ciblée et accompagnement jusqu'à la signature.
+          </p>
+          <ul class="service-list">
+            <li>Analyse du marché local</li>
+            <li>Estimation personnalisée</li>
+            <li>Photos et présentation soignées</li>
+            <li>Sélection ciblée d'acquéreurs</li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal--up" data-delay="200">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Salon lumineux" loading="lazy">
+          </div>
+          <div class="service-body">
+          <span class="service-number">02</span>
+          <h3 class="service-title">Achat</h3>
+          <p class="service-text">
+            Recherche personnalisée, visites accompagnées et conseil expert
+            pour trouver le bien qui correspond à votre projet.
+          </p>
+          <ul class="service-list">
+            <li>Écoute de vos critères</li>
+            <li>Sélection de biens qualifiés</li>
+            <li>Accompagnement aux visites</li>
+            <li>Aide à la négociation</li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal--up" data-delay="300">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=80" alt="Belle maison résidentielle" loading="lazy">
+          </div>
+          <div class="service-body">
+          <span class="service-number">03</span>
+          <h3 class="service-title">Estimation</h3>
+          <p class="service-text">
+            Évaluation précise et objective de votre bien, basée sur notre
+            connaissance approfondie du marché local.
+          </p>
+          <ul class="service-list">
+            <li>Visite détaillée du bien</li>
+            <li>Analyse comparative du marché</li>
+            <li>Rapport d'estimation complet</li>
+            <li>Conseils de valorisation</li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal--up" data-delay="400">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Intérieur chaleureux" loading="lazy">
+          </div>
+          <div class="service-body">
+          <span class="service-number">04</span>
+          <h3 class="service-title">Conseil</h3>
+          <p class="service-text">
+            Investissement, transmission, projet de vie — nous vous guidons
+            dans toutes les dimensions de votre projet immobilier.
+          </p>
+          <ul class="service-list">
+            <li>Conseil en investissement</li>
+            <li>Stratégie patrimoniale</li>
+            <li>Accompagnement global</li>
+            <li>Suivi post-acquisition</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERIE ========== -->
+  <section class="section section--cream" id="galerie">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-label">Nos biens</span>
+        <h2 class="section-title">
+          Des propriétés<br><em>d'exception</em>
+        </h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large reveal reveal--up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Maison contemporaine avec jardin" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Maison</span>
+            <h4 class="gallery-caption">Villa contemporaine</h4>
+            <p class="gallery-meta">4 chambres &middot; 180 m&sup2; &middot; Jardin</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal--up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80" alt="Appartement lumineux" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Appartement</span>
+            <h4 class="gallery-caption">Loft centre-ville</h4>
+            <p class="gallery-meta">2 chambres &middot; 95 m&sup2;</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal--up" data-delay="300">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Cuisine moderne design" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Maison</span>
+            <h4 class="gallery-caption">Maison de famille</h4>
+            <p class="gallery-meta">5 chambres &middot; 220 m&sup2; &middot; Piscine</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal--up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80" alt="Salle à manger élégante" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Appartement</span>
+            <h4 class="gallery-caption">T3 haussmannien</h4>
+            <p class="gallery-meta">2 chambres &middot; 78 m&sup2; &middot; Balcon</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal--up" data-delay="300">
+          <img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=600&q=80" alt="Salle de bain moderne" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Terrain</span>
+            <h4 class="gallery-caption">Parcelle constructible</h4>
+            <p class="gallery-meta">850 m&sup2; &middot; Viabilisé</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CITATION ========== -->
+  <section class="section section--quote">
+    <div class="container">
+      <blockquote class="quote reveal reveal--scale">
+        <p class="quote-text">
+          La confiance est la vraie valeur de l'immobilier.
+        </p>
+        <footer class="quote-author">— AIM Immobilier</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section--cream" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info reveal reveal--up">
+          <span class="section-label">Nous contacter</span>
+          <h2 class="section-title section-title--left">
+            Parlons de<br>votre <em>projet</em>
+          </h2>
+          <p class="contact-text">
+            Que vous souhaitiez vendre, acheter ou simplement obtenir un avis
+            éclairé sur votre projet immobilier, nous sommes à votre écoute.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>jean-marc.idoux@esrre.fr</span>
+            </div>
+            <div class="contact-detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Pessac, France</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal--up" data-delay="200" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Nom complet</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.fr" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="06 XX XX XX XX">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project" class="form-label">Votre projet</label>
+            <select id="project" name="project" class="form-input form-select">
+              <option value="" disabled selected>Sélectionnez votre projet</option>
+              <option value="vente">Je souhaite vendre</option>
+              <option value="achat">Je souhaite acheter</option>
+              <option value="estimation">Je souhaite une estimation</option>
+              <option value="conseil">Je souhaite un conseil</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Décrivez votre projet..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Envoyer mon message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/logo.png" alt="AIM Immobilier" class="footer-logo" width="120" height="48">
+          <p class="footer-tagline">Nous accompagnons vos projets de vie.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul>
+              <li><a href="#philosophie">Philosophie</a></li>
+              <li><a href="#valeurs">Valeurs</a></li>
+              <li><a href="#approche">Notre approche</a></li>
+              <li><a href="#services">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact</h4>
+            <ul>
+              <li><a href="mailto:jean-marc.idoux@esrre.fr">jean-marc.idoux@esrre.fr</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AIM Immobilier — SAS ESRre. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
